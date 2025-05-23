@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class GameOverClass : MonoBehaviour
 {
     public string sceneName = "GameScene";
+
     void Start()
     {
         GameObject btnObj = GameObject.Find("ButtonGamOver");

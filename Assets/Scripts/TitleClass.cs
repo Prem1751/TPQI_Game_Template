@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
 public class TitleClass : MonoBehaviour
 {
     public string sceneName = "GameScene"; // เปลี่ยนชื่อ scene ได้จาก Inspector

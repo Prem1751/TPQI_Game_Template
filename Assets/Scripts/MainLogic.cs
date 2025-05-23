@@ -55,7 +55,7 @@ public class MainLogic : MonoBehaviour
         hp -= 1;
         Debug.Log($"HP: {hp}");
 
-        if (hp < 0)
+        if (hp == 0)
         {
             ShowGameOverUI();
         }
