@@ -36,6 +36,7 @@ public class EnemyClass : MonoBehaviour
             Vector3 direction = (target.position - transform.position).normalized;
             transform.position += direction * speed * Time.deltaTime;
         }
+        //ดีลยการเกิด
     }
 
     private void OnTriggerEnter(Collider other)
@@ -46,6 +47,7 @@ public class EnemyClass : MonoBehaviour
             isHit = true;
             StartCoroutine(FlashRedAndDestroy());
         }
+        //ตรวจจัการนกับการะสุน
     }
 
     private IEnumerator FlashRedAndDestroy()
@@ -65,6 +67,7 @@ public class EnemyClass : MonoBehaviour
             timer += 0.15f;
             yield return new WaitForSeconds(0.15f);
         }
+        //ตอนตายให้กระพริบ
 
         Destroy(gameObject);
     }

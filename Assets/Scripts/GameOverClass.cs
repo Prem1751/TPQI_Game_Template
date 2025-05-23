@@ -12,7 +12,7 @@ public class GameOverClass : MonoBehaviour
             Button btn = btnObj.GetComponent<Button>();
             if (btn != null)
             {
-                btn.onClick.AddListener(LoadScene);
+                btn.onClick.AddListener(LoadScene);//ถ้าคริกให้โหลดซีน
             }
             else
             {
@@ -23,13 +23,14 @@ public class GameOverClass : MonoBehaviour
         {
             Debug.LogWarning("ไม่พบ GameObject ชื่อ StartButton ใน Hierarchy");
         }
+        //เตือนข้อผิดลาด
     }
 
     public void LoadScene()
     {
         if (!string.IsNullOrEmpty(sceneName))
         {
-            SceneManager.LoadScene(sceneName);
+            SceneManager.LoadScene("start");//โหลดซีน
         }
         else
         {
